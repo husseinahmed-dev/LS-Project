@@ -1,0 +1,27 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus2"
+        },
+        "clusterAdminAadGroupObjectId": {
+            "value": "3d795c2b-6915-4690-af93-271f32be76bb"
+        },
+        "a0008NamespaceReaderAadGroupObjectId": {
+            "value": "1ed4eefb-5d36-4c29-82d5-9978729722c9"
+        },
+        "domainName": {
+            "value": "contoso.com"
+        },
+        "kubernetesVersion": {
+            "value": "1.24.9"
+        },
+        "gitOpsBootstrappingRepoHttpsUrl": {
+            "value": "https://github.com/husseinahmed-dev/LS-Project"
+        },
+        "gitOpsBootstrappingRepoBranch": {
+            "value": "main"
+        }
+    }
+}
