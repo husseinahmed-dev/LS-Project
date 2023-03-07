@@ -209,7 +209,7 @@ module keyVault '../CARML/Microsoft.KeyVault/vaults/deploy.bicep' = {
     enableVaultForDeployment: false
     enableVaultForDiskEncryption: false
     enableVaultForTemplateDeployment: true
-    enableSoftDelete: false
+    enableSoftDelete: true
     publicNetworkAccess: keyVaultPublicNetworkAccess
     diagnosticWorkspaceId: clusterLa.outputs.resourceId
     secrets: {}
