@@ -1,2 +1,3 @@
 # LS Project
-<iframe src="https://giphy.com/embed/rQ5cWOkvXfoTUZLIPh" width="480" height="400" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/theoffice-the-office-tv-episode-818-rQ5cWOkvXfoTUZLIPh">via GIPHY</a></p>
+
+![](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTlhZTgyZTcwNDg1Mzk4NDg3OWY2NWVlMGI3OGZiMDhlMmU4MTg0OCZjdD1n/rQ5cWOkvXfoTUZLIPh/giphy.gif)
