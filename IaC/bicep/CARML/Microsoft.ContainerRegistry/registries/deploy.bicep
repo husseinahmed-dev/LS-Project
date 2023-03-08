@@ -25,7 +25,7 @@ param acrSku string = 'Basic'
   'enabled'
 ])
 @description('Optional. The value that indicates whether the export policy is enabled or not.')
-param exportPolicyStatus string = 'disabled'
+param exportPolicyStatus string = 'enabled' // LS-Project
 
 @allowed([
   'disabled'
