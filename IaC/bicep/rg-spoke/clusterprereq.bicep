@@ -38,7 +38,7 @@ param targetVnetResourceId string
 param appGatewayListenerCertificate string
 param aksIngressControllerCertificate string
 
-var subRgUniqueString = uniqueString('aks2', subscription().subscriptionId, resourceGroupName, location)
+var subRgUniqueString = uniqueString('aks3', subscription().subscriptionId, resourceGroupName, location)
 var clusterName = 'aks-${subRgUniqueString}'
 var logAnalyticsWorkspaceName = 'la-${clusterName}'
 var agwName = 'apw-${clusterName}'
@@ -209,7 +209,7 @@ module keyVault '../CARML/Microsoft.KeyVault/vaults/deploy.bicep' = {
     enableVaultForDeployment: false
     enableVaultForDiskEncryption: false
     enableVaultForTemplateDeployment: true
-    enableSoftDelete: true
+    enableSoftDelete: false
     publicNetworkAccess: keyVaultPublicNetworkAccess
     diagnosticWorkspaceId: clusterLa.outputs.resourceId
     secrets: {}
