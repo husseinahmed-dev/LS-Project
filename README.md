@@ -52,6 +52,6 @@ The benefits of using GitOps include increased visibility, traceability, and aud
 17. **Firewall Rules:** Firewall rules are used to enforce policies that govern which traffic is allowed or blocked from entering or leaving the AKS cluster. These rules are defined based on organizational policies and are enforced by the firewall.
 
 
-### Deployment Process
+### <img src="https://user-images.githubusercontent.com/12752516/225729019-becc0c1e-d705-40c5-94b3-62d58f0fa356.png" width="30" height="30"> Deployment Process
 [![Video1](svg-pan-zoom-master/src/media/youtube-deployment.jpg)](https://www.youtube.com/watch?v=IuR39Xq5ALg)
 <!-- The deployment process for this project involves the following steps: -->
