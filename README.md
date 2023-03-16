@@ -9,7 +9,9 @@ The benefits of using GitOps include increased visibility, traceability, and aud
 Complete architecture diagram could be found at: [Large Systems Project](https://husseinahmed-dev.github.io/LS-Project/)
 
 ![Figure-1](svg-pan-zoom-master/src/media/Figure-1.jpg)
-
+![Figure-2](svg-pan-zoom-master/src/media/Figure-2.jpg)
+![Figure-3](svg-pan-zoom-master/src/media/Figure-3.jpg)
+![Figure-4](svg-pan-zoom-master/src/media/Figure-4.jpg)
 
 The architecture of this deployment follows the Microsoft Architecture Center best practices for enterprise-grade deployments on Azure. It includes the following components:
 
