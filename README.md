@@ -8,6 +8,9 @@ The benefits of using GitOps include increased visibility, traceability, and aud
 ### Architecture
 Complete architecture diagram could be found at: [Large Systems Project](https://husseinahmed-dev.github.io/LS-Project/)
 
+![Figure-1](svg-pan-zoom-master/src/media/Figure-1.jpg)
+
+
 The architecture of this deployment follows the Microsoft Architecture Center best practices for enterprise-grade deployments on Azure. It includes the following components:
 
 Kubernetes cluster: a managed Kubernetes cluster on Azure for running the application.
