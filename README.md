@@ -38,6 +38,8 @@ The architecture of this deployment follows the Microsoft Architecture Center be
 13. **Cloudflare Automatic HTTPS Rewrite:** This is a security feature that automatically redirects all HTTP traffic to HTTPS, ensuring that all traffic is encrypted and secure.
 14. **Cloudflare HTTP/2 and HTTP/3 (QUIC):** These are protocol features that improve the performance and security of the AKS cluster. HTTP/2 improves page load times and reduces latency, while HTTP/3 (QUIC) enhances security and reliability.
 15. **Cloudflare Rate Limiting:** This is a security feature that limits the number of requests per second from a particular IP address or user agent. It helps to prevent malicious traffic from overwhelming the AKS cluster.
+16. **Ingress/Egress Traffic Flow:** This is a feature that provides separate paths for incoming and outgoing traffic flow into and out of the AKS cluster. This ensures that the ingress and egress traffic is directed through the appropriate security measures, such as firewall TLS inspection and Cloudflare WAF, before reaching the AKS cluster.
+17. **Firewall Rules:** Firewall rules are used to enforce policies that govern which traffic is allowed or blocked from entering or leaving the AKS cluster. These rules are defined based on organizational policies and are enforced by the firewall.
 
 
 ### Deployment Process
