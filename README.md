@@ -15,7 +15,7 @@ This repository contains the code and configuration files necessary to deploy a 
 GitOps is a modern approach to managing infrastructure and applications in a Kubernetes environment. It involves using Git as the source of truth for all configuration files and manifests, and relying on a continuous delivery pipeline to automatically apply changes to the Kubernetes environment.
 
 The benefits of using GitOps include increased visibility, traceability, and auditability of changes made to the Kubernetes environment, as well as faster and more consistent deployments.
-### Architecture
+### <img src="https://user-images.githubusercontent.com/12752516/225728613-de7d6bf6-fbed-4906-9f58-e53161c9a324.png" width="30" height="30"> Architecture
 > Complete architecture diagram could be found at: [Large Systems Project](https://husseinahmed-dev.github.io/LS-Project/)
 
 ![Figure-1](svg-pan-zoom-master/src/media/Figure-1.jpg)
