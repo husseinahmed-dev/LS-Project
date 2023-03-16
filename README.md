@@ -21,7 +21,7 @@ The benefits of using GitOps include increased visibility, traceability, and aud
 ![Figure-11](svg-pan-zoom-master/src/media/Figure-11.jpg)
 ![Figure-12](svg-pan-zoom-master/src/media/Figure-12.jpg)
 
-## The architecture of this deployment follows the Microsoft Architecture Center best practices for enterprise-grade deployments on Azure. It includes the following components:
+### The architecture of this deployment follows the Microsoft Architecture Center best practices for enterprise-grade deployments on Azure. It includes the following components:
 
 1. **Azure Kubernetes Service (AKS) Cluster:** This is the managed Kubernetes cluster that will host the containerized applications. It provides an API server, control plane, and worker nodes for running the application workloads.
 2. **Jenkins CI/CD Pipeline (on-premise):** This is the continuous integration and delivery (CI/CD) platform used for automating the deployment of the application workloads. It includes a Git repository for storing the application code and Kubernetes manifests, as well as a build and release pipeline for automating the deployment process.
