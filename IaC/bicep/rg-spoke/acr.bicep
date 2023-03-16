@@ -143,11 +143,11 @@ module acrAks '../CARML/Microsoft.ContainerRegistry/registries/deploy.bicep' = {
     acrAdminUserEnabled: false
     networkRuleSetDefaultAction: 'Deny'
     networkRuleSetIpRules: []
-    quarantinePolicyStatus: 'enabled' // LS-Project: disabled
+    quarantinePolicyStatus: 'disabled' // LS-Project: disabled
     trustPolicyStatus: 'disabled'
     retentionPolicyDays: 15
     retentionPolicyStatus: 'enabled'
-    publicNetworkAccess: 'Enabled' // LS-Project: Disabled
+    publicNetworkAccess: 'Disabled' // LS-Project: Disabled
     dataEndpointEnabled: true
     networkRuleBypassOptions: 'AzureServices'
     zoneRedundancy: 'Disabled' // This Preview feature only supports three regions at this time, and eastus2's paired region (centralus), does not support this. So disabling for now.
