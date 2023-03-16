@@ -23,8 +23,8 @@ Complete architecture diagram could be found at: [Large Systems Project](https:/
 
 The architecture of this deployment follows the Microsoft Architecture Center best practices for enterprise-grade deployments on Azure. It includes the following components:
 
-1. Azure Kubernetes Service (AKS) Cluster: This is the managed Kubernetes cluster that will host the containerized applications. It provides an API server, control plane, and worker nodes for running the application workloads.
-2. Jenkins CI/CD Pipeline (on-premise): This is the continuous integration and delivery (CI/CD) platform used for automating the deployment of the application workloads. It includes a Git repository for storing the application code and Kubernetes manifests, as well as a build and release pipeline for automating the deployment process.
+1. *Azure Kubernetes Service (AKS) Cluster:* This is the managed Kubernetes cluster that will host the containerized applications. It provides an API server, control plane, and worker nodes for running the application workloads.
+2. **Jenkins CI/CD Pipeline (on-premise):** This is the continuous integration and delivery (CI/CD) platform used for automating the deployment of the application workloads. It includes a Git repository for storing the application code and Kubernetes manifests, as well as a build and release pipeline for automating the deployment process.
 3. Azure Container Registry (ACR): This is the private container registry used for storing the Docker images used by the application workloads. It integrates with AKS and enables secure and fast deployment of the container images to the AKS cluster.
 4. Azure Monitor: This is the monitoring and logging platform used for monitoring the health and performance of the AKS cluster and application workloads. It provides real-time visibility into the cluster and enables proactive detection and resolution of issues.
 5. Azure Security Center: This is the security and compliance platform used for securing the AKS cluster and application workloads. It provides threat protection, vulnerability management, and compliance reporting for the AKS cluster and applications.
