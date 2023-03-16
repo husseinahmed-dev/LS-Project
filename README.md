@@ -43,4 +43,5 @@ The benefits of using GitOps include increased visibility, traceability, and aud
 
 
 ### Deployment Process
-The deployment process for this project involves the following steps:
+...
+<!-- The deployment process for this project involves the following steps: -->
