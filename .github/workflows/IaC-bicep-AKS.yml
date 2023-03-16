@@ -117,7 +117,21 @@ jobs:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+      
+      - name: Discord notification
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        uses: Ilshidur/action-discord@master
+        with:
+          args: 'The project {{ EVENT_PAYLOAD.repository.full_name }} initiated Azure Cloud Deployment.'
 
+      - name: Discord notification
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        uses: Ilshidur/action-discord@master
+        with:
+          args: 'The project {{ EVENT_PAYLOAD.repository.full_name }} is now deploying Hub.'
+      
       - name: "Deploy Hub"
         id: hub
         uses: azure/arm-deploy@v1
@@ -130,6 +144,20 @@ jobs:
           failOnStdErr: false
           deploymentName: carml-hub-${{ github.event.inputs.REGION }}
 
+      - name: Discord notification
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        uses: Ilshidur/action-discord@master
+        with:
+          args: 'The project {{ EVENT_PAYLOAD.repository.full_name }} deployed Hub successfully!'
+
+      - name: Discord notification
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        uses: Ilshidur/action-discord@master
+        with:
+          args: 'The project {{ EVENT_PAYLOAD.repository.full_name }} is now deploying Spoke.'
+
       - name: "Deploy Spoke"
         id: spoke
         uses: azure/arm-deploy@v1
@@ -141,6 +169,20 @@ jobs:
           parameters: ./IaC/bicep/rg-spoke/spoke.parameters.json hubVnetResourceId=${{ steps.hub.outputs.hubVnetId }} hubLaWorkspaceResourceId=${{ steps.hub.outputs.hubLaWorkspaceResourceId }} hubFwResourceId=${{ steps.hub.outputs.hubFwResourceId }} resourceGroupName=rg-enterprise-networking-spokes-${{ github.event.inputs.REGION }} location=${{ github.event.inputs.REGION }}
           failOnStdErr: false
           deploymentName: carml-spoke-${{ github.event.inputs.REGION }}
+
+      - name: Discord notification
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        uses: Ilshidur/action-discord@master
+        with:
+          args: 'The project {{ EVENT_PAYLOAD.repository.full_name }} deployed Spoke successfully!'
+
+      - name: Discord notification
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        uses: Ilshidur/action-discord@master
+        with:
+          args: 'The project {{ EVENT_PAYLOAD.repository.full_name }} is now deploying Azure Container Registry.'
 
       - name: "Deploy Registry"
         id: registry
@@ -160,6 +202,13 @@ jobs:
         run: |
           az acr import --source docker.io/weaveworks/kured:1.10.1 -n ${{ steps.registry.outputs.containerRegistryName }} --force
           az acr import --source docker.io/library/traefik:v2.8.1 -n ${{ steps.registry.outputs.containerRegistryName }} --force
+
+      - name: Discord notification
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        uses: Ilshidur/action-discord@master
+        with:
+          args: 'The project {{ EVENT_PAYLOAD.repository.full_name }} is now bootstrapping Azure Kubernetes Service Cluster.'
 
       - name: "Deploy Cluster prerequisites"
         id: cluster_prereq
