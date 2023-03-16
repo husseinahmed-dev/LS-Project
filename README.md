@@ -4,7 +4,7 @@ This repository contains the code and configuration files necessary to deploy a 
 ## Dependencies
 @octopus237
 [octopus237/Gitops-project-app](https://github.com/octopus237/Gitops-project-app)
-[GitOps-project](https://github.com/octopus237/GitOps-project)
+[octopus237/GitOps-project](https://github.com/octopus237/GitOps-project)
 ### Overview
 GitOps is a modern approach to managing infrastructure and applications in a Kubernetes environment. It involves using Git as the source of truth for all configuration files and manifests, and relying on a continuous delivery pipeline to automatically apply changes to the Kubernetes environment.
 
