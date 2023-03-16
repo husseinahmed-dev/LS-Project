@@ -1,6 +1,7 @@
 # LS Project
 
-## Achieving Enterprise-Grade Kubernetes Security with GitOps-Enabled Deployments, Azure Cloud, and Hardening Techniques ![image](https://user-images.githubusercontent.com/12752516/225727669-de1efdb1-5938-4439-aa60-840754b97632.png)
+## Achieving Enterprise-Grade Kubernetes Security with GitOps-Enabled Deployments, Azure Cloud, and Hardening Techniques ![image](https://user-images.githubusercontent.com/12752516/225727761-52669776-0c29-493d-8ce5-006352dc87c8.png)
+
 This repository contains the code and configuration files necessary to deploy a Kubernetes application on Azure Cloud using GitOps approach. The deployment process follows the Microsoft Architecture Center best practices for enterprise-grade deployments and is designed to be secure and compliant with regulated environments.
 ## Dependencies
 @octopus237
