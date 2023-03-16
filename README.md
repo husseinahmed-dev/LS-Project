@@ -6,7 +6,7 @@ GitOps is a modern approach to managing infrastructure and applications in a Kub
 
 The benefits of using GitOps include increased visibility, traceability, and auditability of changes made to the Kubernetes environment, as well as faster and more consistent deployments.
 ### Architecture
-Complete architecture diagram could be found at: ![Large Systems Project](https://husseinahmed-dev.github.io/LS-Project/)
+Complete architecture diagram could be found at: [Large Systems Project](https://husseinahmed-dev.github.io/LS-Project/)
 
 The architecture of this deployment follows the Microsoft Architecture Center best practices for enterprise-grade deployments on Azure. It includes the following components:
 
