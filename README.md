@@ -3,8 +3,11 @@
 This repository contains the code and configuration files necessary to deploy a Kubernetes application on Azure Cloud using GitOps approach. The deployment process follows the Microsoft Architecture Center best practices for enterprise-grade deployments and is designed to be secure and compliant with regulated environments.
 ## Dependencies
 @octopus237
+
 [octopus237/Gitops-project-app](https://github.com/octopus237/Gitops-project-app)
+
 [octopus237/GitOps-project](https://github.com/octopus237/GitOps-project)
+
 ### Overview
 GitOps is a modern approach to managing infrastructure and applications in a Kubernetes environment. It involves using Git as the source of truth for all configuration files and manifests, and relying on a continuous delivery pipeline to automatically apply changes to the Kubernetes environment.
 
