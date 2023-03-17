@@ -19,7 +19,7 @@ on:
         description: 'The Name of the ACR resource'
         required: true
         type: string
-        default: acrakszjh4e34bwk5mi
+        default: acraksndma3t6oaphlc
       APPNAME:
         description: 'The Name of the Application to deploy'
         default: "flask"
