@@ -81,8 +81,8 @@ jobs:
           APPNAME: "${{ inputs.APPNAME }}"
         run: |
           cd "workloads/$APPNAME"
-          docker build -t ${{ inputs.ACRNAME }}.azurecr.io/${{ inputs.APPNAME }}:${{ github.run_number }} .
-          docker push ${{ inputs.ACRNAME }}.azurecr.io/${{ inputs.APPNAME }}:${{ github.run_number }}
+          docker build -t ${{ inputs.ACRNAME }}.azurecr.io/${{ inputs.APPNAME }}:main .
+          docker push ${{ inputs.ACRNAME }}.azurecr.io/${{ inputs.APPNAME }}:main
 
   Update-K8s-Manifests:
     name: Update K8s Deployment Manifest with Image Version
