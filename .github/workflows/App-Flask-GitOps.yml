@@ -83,8 +83,8 @@ jobs:
           APPNAME: "${{ inputs.APPNAME }}"
         run: |
           cd "workloads/$APPNAME"
-          docker build -t acrakszjh4e34bwk5mi.azurecr.io/${{ inputs.APPNAME }}:${{ github.run_number }} .
-          docker push acrakszjh4e34bwk5mi.azurecr.io/${{ inputs.APPNAME }}:${{ github.run_number }}
+          docker build -t acrakszjh4e34bwk5mi.azurecr.io/flask/${{ inputs.APPNAME }}:${{ github.run_number }} .
+          docker push acrakszjh4e34bwk5mi.azurecr.io/flask/${{ inputs.APPNAME }}:${{ github.run_number }}
 
   Update-K8s-Manifests:
     name: Update K8s Deployment Manifest with Image Version
