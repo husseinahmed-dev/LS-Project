@@ -29,6 +29,7 @@ on:
         description: 'A GitHub Environment to pull action secrets from'
         required: true
         type: environment
+        default: production
 
 permissions:
       id-token: write
