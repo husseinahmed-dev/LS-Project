@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: flask-deployment
-  namespace: default
+  namespace: a0008
 spec:
   replicas: 1
   selector:
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: flask-deployment
-        image: acraksndma3t6oaphlc.azurecr.io/flask:26
+        image: docker.io/ha33ona/flask:main
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 2000
@@ -31,7 +31,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: flask-service
-  namespace: default
+  namespace: a0008
 spec:
   type: ClusterIP
   selector:
