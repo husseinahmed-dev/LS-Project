@@ -19,7 +19,6 @@ on:
         description: 'The Name of the ACR resource'
         required: true
         type: string
-        default: acrakszjh4e34bwk5mi
       APPNAME:
         description: 'The Name of the Application to deploy'
         default: "flask"
@@ -29,7 +28,6 @@ on:
         description: 'A GitHub Environment to pull action secrets from'
         required: true
         type: environment
-        default: production
 
 permissions:
       id-token: write
@@ -83,8 +81,8 @@ jobs:
           APPNAME: "${{ inputs.APPNAME }}"
         run: |
           cd "workloads/$APPNAME"
-          docker build -t ${{ inputs.ACRNAME }}.azurecr.io/${{ inputs.APPNAME }}:main .
-          docker push ${{ inputs.ACRNAME }}.azurecr.io/${{ inputs.APPNAME }}:main
+          docker build -t acrakszjh4e34bwk5mi.azurecr.io/${{ inputs.APPNAME }}:${{ github.run_number }} .
+          docker push acrakszjh4e34bwk5mi.azurecr.io/${{ inputs.APPNAME }}:${{ github.run_number }}
 
   Update-K8s-Manifests:
     name: Update K8s Deployment Manifest with Image Version
