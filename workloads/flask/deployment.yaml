@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: flask-deployment
-  namespace: default
+  namespace: a0008
 spec:
   replicas: 1
   selector:
