@@ -83,8 +83,8 @@ jobs:
           APPNAME: "${{ inputs.APPNAME }}"
         run: |
           cd "workloads/$APPNAME"
-          docker build -t acrakszjh4e34bwk5mi.azurecr.io/flask/${{ inputs.APPNAME }}:${{ github.run_number }} .
-          docker push acrakszjh4e34bwk5mi.azurecr.io/flask/${{ inputs.APPNAME }}:${{ github.run_number }}
+          docker build -t acrakszjh4e34bwk5mi.azurecr.io/${{ inputs.APPNAME }}:${{ github.sha }} .
+          docker push acrakszjh4e34bwk5mi.azurecr.io/${{ inputs.APPNAME }}:${{ github.sha }}
 
   Update-K8s-Manifests:
     name: Update K8s Deployment Manifest with Image Version
@@ -102,7 +102,7 @@ jobs:
         inlineScript: |
           $line = Get-Content workloads/flask/deployment.yaml | Select-String image: | Select-Object -ExpandProperty Line
           $content = Get-Content workloads/flask/deployment.yaml
-          $content | ForEach-Object {$_ -replace $line,"        image: ${{ inputs.ACRNAME }}.azurecr.io/${{ inputs.APPNAME }}:${{ github.run_number }}"} | Set-Content workloads/flask/deployment.yaml
+          $content | ForEach-Object {$_ -replace $line,"        image: ${{ inputs.ACRNAME }}.azurecr.io/${{ inputs.APPNAME }}:${{ github.sha }}"} | Set-Content workloads/flask/deployment.yaml
         azPSVersion: "latest"
     
     - name: Commit changes in manifest to repo
