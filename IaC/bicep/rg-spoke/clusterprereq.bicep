@@ -38,7 +38,7 @@ param targetVnetResourceId string
 param appGatewayListenerCertificate string
 param aksIngressControllerCertificate string
 
-var subRgUniqueString = uniqueString('aks8', subscription().subscriptionId, resourceGroupName, location)
+var subRgUniqueString = uniqueString('aks9', subscription().subscriptionId, resourceGroupName, location)
 var clusterName = 'aks-${subRgUniqueString}'
 var logAnalyticsWorkspaceName = 'la-${clusterName}'
 var agwName = 'apw-${clusterName}'
