@@ -54,4 +54,5 @@ The benefits of using GitOps include increased visibility, traceability, and aud
 
 ### <img src="https://user-images.githubusercontent.com/12752516/225729019-becc0c1e-d705-40c5-94b3-62d58f0fa356.png" width="30" height="30"> Deployment Process
 [![Video1](svg-pan-zoom-master/src/media/youtube-deployment.jpg)](https://www.youtube.com/watch?v=IuR39Xq5ALg)
+[![Video2](svg-pan-zoom-master/src/media/youtube-jenkins.jpg)](https://www.youtube.com/watch?v=VVVaczq8AAQ)
 <!-- The deployment process for this project involves the following steps: -->
