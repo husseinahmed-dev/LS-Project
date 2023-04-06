@@ -1,4 +1,4 @@
-# LS Project
+# LS Project 
 
 ## <img src="https://user-images.githubusercontent.com/12752516/225727761-52669776-0c29-493d-8ce5-006352dc87c8.png" width="30" height="30"> Achieving Enterprise-Grade Kubernetes Security with GitOps-Enabled Deployments, Azure Cloud, and Hardening Techniques
 
