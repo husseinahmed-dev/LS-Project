@@ -18,18 +18,18 @@ The benefits of using GitOps include increased visibility, traceability, and aud
 ### <img src="https://user-images.githubusercontent.com/12752516/225728613-de7d6bf6-fbed-4906-9f58-e53161c9a324.png" width="30" height="30"> Architecture
 > Complete architecture diagram could be found at: [Large Systems Project](https://husseinahmed-dev.github.io/LS-Project/)
 
-![Figure-1](svg-pan-zoom-master/src/media/Figure-1.jpg)
-![Figure-2](svg-pan-zoom-master/src/media/Figure-2.jpg)
-![Figure-3](svg-pan-zoom-master/src/media/Figure-3.jpg)
-![Figure-4](svg-pan-zoom-master/src/media/Figure-4.jpg)
-![Figure-5](svg-pan-zoom-master/src/media/Figure-5.jpg)
-![Figure-6](svg-pan-zoom-master/src/media/Figure-6.jpg)
-![Figure-7](svg-pan-zoom-master/src/media/Figure-7.jpg)
-![Figure-8](svg-pan-zoom-master/src/media/Figure-8.jpg)
-![Figure-9](svg-pan-zoom-master/src/media/Figure-9.jpg)
-![Figure-10](svg-pan-zoom-master/src/media/Figure-10.jpg)
-![Figure-11](svg-pan-zoom-master/src/media/Figure-11.jpg)
-![Figure-12](svg-pan-zoom-master/src/media/Figure-12.jpg)
+#![Figure-1](svg-pan-zoom-master/src/media/Figure-1.jpg)
+#![Figure-2](svg-pan-zoom-master/src/media/Figure-2.jpg)
+#![Figure-3](svg-pan-zoom-master/src/media/Figure-3.jpg)
+#![Figure-4](svg-pan-zoom-master/src/media/Figure-4.jpg)
+#![Figure-5](svg-pan-zoom-master/src/media/Figure-5.jpg)
+#![Figure-6](svg-pan-zoom-master/src/media/Figure-6.jpg)
+#![Figure-7](svg-pan-zoom-master/src/media/Figure-7.jpg)
+#![Figure-8](svg-pan-zoom-master/src/media/Figure-8.jpg)
+#![Figure-9](svg-pan-zoom-master/src/media/Figure-9.jpg)
+#![Figure-10](svg-pan-zoom-master/src/media/Figure-10.jpg)
+#![Figure-11](svg-pan-zoom-master/src/media/Figure-11.jpg)
+#![Figure-12](svg-pan-zoom-master/src/media/Figure-12.jpg)
 
 ### The architecture of this deployment follows the Microsoft Architecture Center best practices for enterprise-grade deployments on Azure. It includes the following components:
 
